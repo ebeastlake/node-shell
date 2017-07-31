@@ -9,6 +9,4 @@ process.stdin.on('data', function(data) {
 	var userArg = input.slice(1).join(" ");
 
 	commands[userCommand](userArg);
-	process.stdout.write(chalk.yellow('\nprompt > '));
-
 })
